@@ -8,7 +8,7 @@
 ## Introduction
 
 In this lab, you'll be reading error messages from tests. This lab is designed
-so that both running the files _and_ running the test suite via the `learn test`
+so that both running the files _and_ running the test suite via the `bin/rspec`
 command will show the error messages for you to decode. Moving forward though,
 you'll be reading error messages mainly through running the test suite.
 
@@ -18,7 +18,7 @@ Let's start by running some of the Ruby code in the `lib` folder to produce an
 error message. Run this in your terminal:
 
 ```console
-$ ruby lib/a_name_error.rb
+ruby lib/a_name_error.rb
 ```
 
 Error messages have 3 parts:
@@ -71,7 +71,7 @@ the name of a variable or a method. If that word was never defined as either a
 variable or a method, it will result in a name error. Try this out in IRB:
 
 ```console
-$  irb
+ irb
 2.7.3 :001 > a_variable
 NameError (undefined local variable or method `a_variable' for main:Object)
 2.7.3 :002 > a_variable = 7
@@ -133,7 +133,7 @@ A `DivisionError` is caused when a given number is divided by 0.
 
 ## Instructions
 
-To get started, run `learn test --f-f` to run the first test in the test suite.
+To get started, run `bin/rspec --f-f` to run the first test in the test suite.
 Use the error messages to guide your work:
 
 - Read the errors. Scroll through the entire output to get a sense of what the
@@ -148,4 +148,4 @@ Use the error messages to guide your work:
   better sense of the errors.
 
 Fix the errors in each of the files in `lib/`. Then confirm the fix by running
-`learn test` again.
+`bin/rspec` again.
